@@ -45,8 +45,8 @@ productImages.forEach((image) => {
 function redirectToPayment(nombre, precio, imagen) {
     const mensaje = `Hola, me gustaría comprar ${nombre} por $${precio}. Aquí está la imagen: ${imagen}`;
     const url = /Mobi|Android/i.test(navigator.userAgent) ?
-        `https://api.whatsapp.com/send?phone=51926719904&text=${encodeURIComponent(mensaje)}` :
-        `https://web.whatsapp.com/send?phone=51926719904&text=${encodeURIComponent(mensaje)}`;
+        `https://api.whatsapp.com/send?phone=51995594686&text=${encodeURIComponent(mensaje)}` :
+        `https://web.whatsapp.com/send?phone=51995594686&text=${encodeURIComponent(mensaje)}`;
     
     window.open(url, '_blank');
 }
@@ -87,8 +87,8 @@ function contactWhatsApp(event) {
     event.preventDefault(); // Evita que el enlace se abra
     const mensaje = "Hola vi su pagina , quisiera hacer una pregunta?"; // Define el mensaje que quieres enviar
     const url = /Mobi|Android/i.test(navigator.userAgent) ?
-        `https://api.whatsapp.com/send?phone=51926719904&text=${encodeURIComponent(mensaje)}` :
-        `https://web.whatsapp.com/send?phone=51926719904&text=${encodeURIComponent(mensaje)}`;
+        `https://api.whatsapp.com/send?phone=51995594686&text=${encodeURIComponent(mensaje)}` :
+        `https://web.whatsapp.com/send?phone=51995594686&text=${encodeURIComponent(mensaje)}`;
 
     window.open(url, '_blank');
 }
